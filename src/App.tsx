@@ -9,7 +9,7 @@ const App = () => {
   const [seconds, setSeconds] = useState(INITIAL_TIME);
   const [timerRunning, setTimerRunning] = useState(false);
 
-  const audio = useMemo(() => new Audio("/alarm.wav"), []);
+  const audio = useMemo(() => new Audio("/alarm.mp3"), []);
 
   useEffect(() => {
     if (timerRunning && seconds > 0) {
