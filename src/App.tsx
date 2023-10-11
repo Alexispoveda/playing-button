@@ -4,7 +4,7 @@ import './App.css'
 
 const App = () => {
 
-  const INITIAL_TIME = import.meta.env.VITE_INITIAL_TIME || 15;
+  const INITIAL_TIME : number = import.meta.env.VITE_INITIAL_TIME || 15;
 
   const [seconds, setSeconds] = useState(INITIAL_TIME);
   const [timerRunning, setTimerRunning] = useState(false);
